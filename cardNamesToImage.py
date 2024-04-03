@@ -5,6 +5,9 @@ from PIL import Image
 import io
 import math
 
+REPEAT_CARDS_WITH_MULTIPLE_COPIES = True
+
+
 def get_card_image(card_name, set_code=None, card_num=None):
     # Get the image of the card from scryfall, if set_code and card_num are provided, get the specific card and do not use fuzzy search or the card name
     url = "https://api.scryfall.com/cards/named"
@@ -22,7 +25,16 @@ def get_card_image(card_name, set_code=None, card_num=None):
     if "image_uris" in card_data:
         image_url = card_data["image_uris"]["normal"]
     elif "card_faces" in card_data:
-        image_url = card_data["card_faces"][0]["image_uris"]["normal"]
+        front_image_url = card_data["card_faces"][0]["image_uris"]["normal"]
+        back_image_url = card_data["card_faces"][1]["image_uris"]["normal"]
+        front_image_response = requests.get(front_image_url)
+        back_image_response = requests.get(back_image_url)
+        if front_image_response.status_code != 200 or back_image_response.status_code != 200:
+            print(f"Error getting card image for {card_name}")
+            return None
+        front_image = Image.open(io.BytesIO(front_image_response.content))
+        back_image = Image.open(io.BytesIO(back_image_response.content))
+        return front_image, back_image
     else:
         print(f"Error getting card image for {card_name}")
         # Write the response to a file to see what the error is
@@ -37,11 +49,18 @@ def get_card_image(card_name, set_code=None, card_num=None):
     image = Image.open(io.BytesIO(image_response.content))
     return image
 
-def merge_images(images):
+def merge_images(initImages):
+    images = []
+    for image in initImages:
+        if isinstance(image, tuple):
+            images.append(image[0])
+            images.append(image[1])
+        else:
+            images.append(image)
     num_images = len(images)
     grid_size = math.ceil(math.sqrt(num_images))
     num_rows = math.ceil(num_images / grid_size)
-    widths, heights = zip(*(i.size for i in images))
+    widths, heights = zip(*((i.size if not isinstance(i, tuple) else i[0].size) for i in images))
     max_width = max(widths)
     max_height = max(heights)
     total_width = max_width * grid_size
@@ -50,7 +69,11 @@ def merge_images(images):
     for i, image in enumerate(images):
         x_offset = (i % grid_size) * max_width
         y_offset = (i // grid_size) * max_height
-        new_image.paste(image, (x_offset, y_offset))
+        if isinstance(image, tuple):
+            new_image.paste(image[0], (x_offset, y_offset))
+            new_image.paste(image[1], (x_offset + image[0].size[0], y_offset))
+        else:
+            new_image.paste(image, (x_offset, y_offset))
     return new_image
 
 def save_image(image):
@@ -84,7 +107,10 @@ def parse_cards_string(cards_string):
             if split:
                 card_num = split[0]
             card_name = card_name[:card_name.find("(")].strip()
-        for _ in range(count):
+        if REPEAT_CARDS_WITH_MULTIPLE_COPIES:
+            for _ in range(count):
+                cards.append((card_name, set_code, card_num))
+        else:
             cards.append((card_name, set_code, card_num))
     return cards
 
