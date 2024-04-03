@@ -16,3 +16,36 @@ Before running the script, ensure you have Python installed on your system. You'
 
 ```bash
 pip install -r requirements.txt
+```
+
+### 2. Creating Your Deck List
+
+Create a file named cards.txt and add your deck list in the following format:
+
+Count Card Name (Set) CollectorNumber
+Count Card Name (Set) CollectorNumber
+...
+
+Anything on the same line after the collector number will be ignored.
+
+For example:
+
+python
+
+1 The Wise Mothman (PIP) 4
+1 Agent Frank Horrigan (PIP) 89
+1 Alpha Deathclaw (PIP) 91
+1 Altar of the Brood (KTK) 216
+...
+
+3. Running the Script
+
+Run the Python script:
+
+bash
+
+python mtg_image_merger.py
+
+4. Output
+
+The script will generate an image file named merged_image.png in the same directory, containing merged images of all the cards in your deck.
