@@ -51,4 +51,5 @@ python mtg_image_merger.py
 ### 4. Output
 
 The script will generate an image file named merged_image.png in the same directory, containing merged images of all the cards in your deck.
+
 Inside the script, you can change the variable at the top if you don't want multiple of the same image if there is more than one copy in the list.
