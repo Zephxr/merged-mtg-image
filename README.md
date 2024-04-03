@@ -22,9 +22,11 @@ pip install -r requirements.txt
 
 Create a file named cards.txt and add your deck list in the following format:
 
+```
 Count Card Name (Set) CollectorNumber
 Count Card Name (Set) CollectorNumber
 ...
+```
 
 Anything on the same line after the collector number will be ignored.
 
