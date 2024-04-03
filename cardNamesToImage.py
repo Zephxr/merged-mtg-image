@@ -1,5 +1,3 @@
-# Using scryfall API, send them a list of cards and download the images and merge them into a single image
-
 import requests
 import json
 import os
@@ -61,9 +59,6 @@ def save_image(image):
     image.save(directory + '/merged_image.png')
     print(f"Image saved to {directory}/merged_image.png")
 
-
-
-
 def parse_cards_string(cards_string):
     # Each card is in the format "count card_name (set_code) card_num optional_extra"
     # Each card is separated by a comma
@@ -83,9 +78,12 @@ def parse_cards_string(cards_string):
         card_num = None
         if "(" in card_name and ")" in card_name:
             set_code = card_name[card_name.find("(") + 1:card_name.find(")")]
-            # If there is a index after the set code, extract it to get the card number
-            if card_name.find(")") + 1 < len(card_name):
-                card_num = card_name[card_name.find(")") + 1:]
+            # Grab everything after the set code RP
+            after = card_name[card_name.find(")") + 2:]
+            print(after)
+            split = after.split(" ")
+            if split:
+                card_num = split[0]
             card_name = card_name[:card_name.find("(")].strip()
         for _ in range(count):
             cards.append((card_name, set_code, card_num))
