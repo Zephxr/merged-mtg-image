@@ -1,89 +1,88 @@
-1 Agent Frank Horrigan
-1 Alpha Deathclaw
-1 Altar of the Brood
-1 Arcane Signet
-1 Assassin's Trophy
-1 Atomize
-1 Bloodchief Ascension
-1 Branching Evolution
-1 Breach the Multiverse
-1 Breeding Pool
-1 Command Tower
-1 Contaminated Drink
-1 Corpsejack Menace
-1 Cultivate
-1 Danny Pink
-1 Darkwater Catacombs
-1 Drowned Catacomb
-1 Dryad's Revival
-1 Eternal Witness
-1 Evolution Sage
-1 Exotic Orchard
-1 Farseek
-1 Fetid Pools
-1 Find/Finality
-5 Forest
-1 Glowing One
-1 Guardian Project
-1 Hancock, Ghoulish Mayor
-1 Hardened Scales
-1 Harmonize
-1 Heroic Intervention
-1 Hinterland Harbor
-1 Inexorable Tide
-1 Infesting Radroach
-1 Inspiring Call
-5 Island
-1 Jason Bright, Glowing Prophet
-1 Kami of Whispered Hopes
-1 Lumbering Megasloth
-1 Marcus, Mutant Mayor
-1 Mariposa Military Base
-1 Mesmeric Orb
-1 Mirelurk Queen
-1 Mnemonic Betrayal
-1 Mortuary Mire
-1 Muldrotha, the Gravetide
-1 Mutational Advantage
-1 Nature's Lore
-1 Nesting Grounds
-1 Nightkin Ambusher
-1 Noxious Revival
-1 Nuclear Fallout
-1 Opulent Palace
-1 Overflowing Basin
-1 Path of Ancestry
-1 Putrefy
-1 Radstorm
-1 Rampant Growth
-1 Raul, Trouble Shooter
-1 Rejuvenating Springs
-1 Rhystic Study
-1 Ruin Crab
-1 Screeching Scorchbeast
-1 Sol Ring
-1 Struggle for Project Purity
-1 Sunken Hollow
-5 Swamp
-1 Syr Konrad, the Grim
-1 Tainted Isle
-1 Tainted Wood
-1 Talisman of Curiosity
-1 Talisman of Dominance
-1 Talisman of Resilience
-1 Temple of Deceit
-1 Temple of Malady
-1 Temple of Mystery
-1 The Master, Transcendent
-1 The Ozolith
-1 Unnatural Restoration
-1 V.A.T.S.
-1 Vault 87: Forced Evolution
-1 Vexing Radgull
-1 Viridescent Bog
-1 Watchful Radstag
-1 Winding Constrictor
-1 Woodland Cemetery
-1 Zellix, Sanity Flayer
-
-1 The Wise Mothman
+1 The Wise Mothman (PIP) 4 *F*
+1 Agent Frank Horrigan (PIP) 89
+1 Alpha Deathclaw (PIP) 91
+1 Altar of the Brood (KTK) 216
+1 Arcane Signet (MKC) 223
+1 Assassin's Trophy (MKM) 412
+1 Atomize (PIP) 338
+1 Bloodchief Ascension (PLST) ZEN-82
+1 Branching Evolution (PIP) 195
+1 Breach the Multiverse (PMOM) 94p
+1 Breeding Pool (UNF) 286
+1 Command Tower (WHO) 264
+1 Contaminated Drink (PIP) 99
+1 Corpsejack Menace (RTR) 152
+1 Cultivate (DMC) 130
+1 Danny Pink (WHO) 39
+1 Darkwater Catacombs (MKC) 257
+1 Drowned Catacomb (WHO) 274
+1 Dryad's Revival (MID) 183
+1 Eternal Witness (2X2) 368
+1 Evolution Sage (LCC) 240
+1 Exotic Orchard (NCC) 400
+1 Farseek (RVR) 138
+1 Fetid Pools (MKC) 261
+1 Find // Finality (GRN) 225
+5 Forest (AKH) 268
+1 Glowing One (PIP) 76
+1 Guardian Project (PIP) 199
+1 Hancock, Ghoulish Mayor (PIP) 45
+1 Hardened Scales (LCC) 243
+1 Harmonize (DDD) 21
+1 Heroic Intervention (PIP) 471
+1 Hinterland Harbor (DMR) 396
+1 Inexorable Tide (PIP) 177
+1 Infesting Radroach (PIP) 46
+1 Inspiring Call (MOC) 304
+5 Island (M19) 265
+1 Jason Bright, Glowing Prophet (PIP) 32
+1 Kami of Whispered Hopes (MOM) 383
+1 Lumbering Megasloth (PIP) 80
+1 Marcus, Mutant Mayor (PIP) 418
+1 Mariposa Military Base (PIP) 443
+1 Mesmeric Orb (MRD) 204
+1 Mirelurk Queen (PIP) 33
+1 Mnemonic Betrayal (GRN) 189
+1 Mortuary Mire (C19) 260
+1 Muldrotha, the Gravetide (DOM) 199
+1 Mutational Advantage (PIP) 111
+1 Nature's Lore (DMR) 170
+1 Nesting Grounds (PIP) 276
+1 Nightkin Ambusher (PIP) 112
+1 Noxious Revival (ONC) 110
+1 Nuclear Fallout (PIP) 47
+1 Opulent Palace (C16) 313
+1 Overflowing Basin (PIP) 152
+1 Path of Ancestry (ONC) 161
+1 Putrefy (RVR) 378
+1 Radstorm (PIP) 37
+1 Rampant Growth (6ED) 246
+1 Raul, Trouble Shooter (PIP) 115
+1 Rejuvenating Springs (CMR) 354
+1 Rhystic Study (J22) 114
+1 Ruin Crab (ZNR) 295
+1 Screeching Scorchbeast (PIP) 332
+1 Sol Ring (MKC) 237
+1 Struggle for Project Purity (PIP) 39
+1 Sunken Hollow (CLB) 918
+5 Swamp (BFZ) 264a
+1 Syr Konrad, the Grim (MOC) 269
+1 Tainted Isle (MKC) 300
+1 Tainted Wood (C21) 321
+1 Talisman of Curiosity (MKC) 241
+1 Talisman of Dominance (MKC) 242
+1 Talisman of Resilience (C21) 270
+1 Temple of Deceit (BRC) 205
+1 Temple of Malady (M20) 254
+1 Temple of Mystery (WHO) 318
+1 The Master, Transcendent (PIP) 6 *F*
+1 The Ozolith (PIKO) 237p
+1 Unnatural Restoration (ONE) 191
+1 V.A.T.S. (PIP) 50
+1 Vault 87: Forced Evolution (PIP) 122
+1 Vexing Radgull (PIP) 41
+1 Viridescent Bog (PIP) 154
+1 Watchful Radstag (PIP) 87
+1 Winding Constrictor (PLST) AER-140
+1 Woodland Cemetery (DMR) 401
+1 Zellix, Sanity Flayer (CLB) 652 *F*

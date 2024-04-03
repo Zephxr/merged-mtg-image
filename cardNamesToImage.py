@@ -80,7 +80,6 @@ def parse_cards_string(cards_string):
             set_code = card_name[card_name.find("(") + 1:card_name.find(")")]
             # Grab everything after the set code RP
             after = card_name[card_name.find(")") + 2:]
-            print(after)
             split = after.split(" ")
             if split:
                 card_num = split[0]
@@ -97,7 +96,6 @@ with open("cards.txt", "r") as f:
 
 if cardsString:
     cards = parse_cards_string(cardsString)
-print(cards)
 images = []
 for card in cards:
     images.append(get_card_image(*card))
