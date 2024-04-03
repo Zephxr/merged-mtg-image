@@ -6,7 +6,8 @@ import io
 import math
 
 REPEAT_CARDS_WITH_MULTIPLE_COPIES = True
-
+COMPRESS_IMAGES = True
+COMPRESSION_QUALITY = 75
 
 def get_card_image(card_name, set_code=None, card_num=None):
     # Get the image of the card from scryfall, if set_code and card_num are provided, get the specific card and do not use fuzzy search or the card name
@@ -128,3 +129,8 @@ for card in cards:
     images.append(get_card_image(*card))
 merged_image = merge_images(images)
 save_image(merged_image)
+
+if COMPRESS_IMAGES:
+    print("Compressing image...")
+    merged_image.save("merged_image_compressed.jpg", quality=COMPRESSION_QUALITY)
+    print("Compressed image saved to merged_image_compressed.jpg")
