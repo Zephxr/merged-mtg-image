@@ -94,6 +94,7 @@ cardsString = ""
 with open("cards.txt", "r") as f:
     cardsString = f.read()
 
+print("Working...")
 if cardsString:
     cards = parse_cards_string(cardsString)
 images = []
