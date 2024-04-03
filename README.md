@@ -1,2 +1,2 @@
 # merged-mtg-image
-Takes in mtg cards names and spits out an image of them all.
+Takes in a list of MTG card names as well as counts of cards, sets, and collector numbers and merges all the card images into one using scryfall.
